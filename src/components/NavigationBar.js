@@ -1,77 +1,55 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./NavigationBar.css";
 
-
-
-const Styles = styled.div`
-  div {
-    text-align:center;
+class NavigationBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      scrolled: false
+    };
   }
 
-  .intro {
-    margin-top:200px;
-    text-align: center;
-  }
-
-  .nav{
-    width: 100%;
-    margin-top:-20px
-    justify-content: center;
-  }
-
-  .nav_text{
-    width: 100%
-    justify-content: space-around;
-    padding: 1rem;
-  }
-  
-  .nav_text h1{
-    font-size: 1.5rem;
-  }
-
-  .nav_text h1:hover {
-    color: blue;
-    cursor: pointer;
-  }
-
-  .scrolled{
-    position:fixed;
-    background-color: gray;
-    margin-top: -271px;
-  }
-`;
-
-export const NavigationBar = () => (
-    constructor() {
-        super();
-        this.state = {
-          scrolled: false
-        };
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 179;
+      if (isTop !== true) {
+        this.setState({ scrolled: true });
+      } else {
+        this.setState({ scrolled: false });
       }
-    
-      componentDidMount() {
-        window.addEventListener("scroll", () => {
-          const isTop = window.scrollY < 280;
-          if (isTop !== true) {
-            this.setState({ scrolled: true });
-          } else {
-            this.setState({ scrolled: false });
-          }
-        });
-      }
-    
-      componentWillUnmount() {
-        window.removeEventListener("scroll");
-      }
-  <div>
-    <Styles>
-      <h2 className="intro">hi, i'm rachel</h2>
-      <hr />
-      <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
-        <div className="nav_text">
-          <h1>yay, i did it</h1>
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll");
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
+          <div className="title">
+            <h3>Hi, I'm Rachel.</h3>
+          </div>
+          <div className="nav_text">
+            <hr className="top" />
+            <Router>
+              <Link to="/">About</Link>
+              <Link to="/">CV</Link>
+              <Link to="/">Projects</Link>
+              <Link to="/">Contact</Link>
+            </Router>
+            <hr className="bottom" />
+          </div>
         </div>
-      </div>
-    </Styles>
-  </div>
-);
+        <div className={this.state.scrolled ? "spacer" : "nospacer"}>
+          &nbsp;
+        </div>
+      </React.Fragment>
+    );
+  }
+}
+
+export default NavigationBar;
