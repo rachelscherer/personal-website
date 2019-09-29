@@ -15,7 +15,7 @@ class App extends Component {
       <React.Fragment>
         <NavigationBar />
         <Layout>
-          <Router>
+          <Router basename="app">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
