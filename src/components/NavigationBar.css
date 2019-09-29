@@ -19,7 +19,7 @@ hr.bottom {
 .nav {
   background-color: #d8e8f8;
   position: fixed;
-  margin-top: -59px;
+  margin-top: -19px;
   width: 100%;
   justify-content: center;
 }
@@ -27,16 +27,39 @@ hr.bottom {
 .scrolled {
   position: fixed;
   background-color: #d8e8f8;
+  margin-top: -19px;
+  width: 100%;
+  justify-content: center;
+}
+
+.title{
+  position:absolute;
+  top: 125px;
+  left: 50%;
+  margin-left: -110px;
+  text-align: center; 
 }
 
 .spacer {
-  height: 50px;
+  height: 130px;
 }
 .nospacer {
-  height: 50px;
+  height: 130px;
+}
+
+.nav_text {
+  width: 100%;
+  height: 76px;
 }
 
 @media only screen and (min-width: 768px) {
+  .title{
+    position:absolute;
+    top: 125px;
+    left: 50%;
+    margin-left: -110px;
+  }
+
   hr.top {
     width: 500px;
   }
@@ -48,9 +71,8 @@ hr.bottom {
   .nav {
     position: relative;
     margin-top: 0px;
-    padding-top: 120px;
+    padding-top: 180px;
     width: 100%;
-    justify-content: center;
     background-color: white;
     transition: background-color 0.35s ease;
   }
@@ -59,18 +81,13 @@ hr.bottom {
     transition: background-color 0.35s ease;
     position: fixed;
     background-color: #d8e8f8;
-    margin-top: -180px;
+    margin-top: -198px;
   }
 
   .spacer {
-    height: 242px;
+    height: 252px;
   }
   .nospacer {
     height: 0px;
   }
-}
-
-.nav_text {
-  width: 100%;
-  height: 76px;
 }

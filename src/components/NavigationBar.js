@@ -13,7 +13,7 @@ class NavigationBar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 179;
+      const isTop = window.scrollY < 196;
       if (isTop !== true) {
         this.setState({ scrolled: true });
       } else {
@@ -30,9 +30,6 @@ class NavigationBar extends Component {
     return (
       <React.Fragment>
         <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
-          <div className="title">
-            <h3>Hi, I'm Rachel.</h3>
-          </div>
           <div className="nav_text">
             <hr className="top" />
             <Router>
@@ -47,6 +44,7 @@ class NavigationBar extends Component {
         <div className={this.state.scrolled ? "spacer" : "nospacer"}>
           &nbsp;
         </div>
+        <div className="title"><h3>Hi, I'm Rachel.</h3></div>
       </React.Fragment>
     );
   }
