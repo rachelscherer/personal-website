@@ -3,7 +3,9 @@ div {
 }
 
 a {
-  padding: 0 42px 0 42px;
+  padding: 0;
+  display: none;
+  visibility: hidden;
 }
 
 hr.top {
@@ -37,7 +39,8 @@ hr.bottom {
   top: 125px;
   left: 50%;
   margin-left: -110px;
-  text-align: center; 
+  text-align: center;
+  z-index:-1;
 }
 
 .spacer {
@@ -53,11 +56,18 @@ hr.bottom {
 }
 
 @media only screen and (min-width: 768px) {
+  a {
+    padding: 0 42px 0 42px;
+    visibility: visible;
+    display: inline;
+  }
+
   .title{
     position:absolute;
     top: 125px;
     left: 50%;
     margin-left: -110px;
+    z-index:0;
   }
 
   hr.top {
