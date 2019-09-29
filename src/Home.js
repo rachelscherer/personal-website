@@ -6,7 +6,7 @@ export const Home = () => (
   <div>
     <br />
     <br />
-    <img src={rachel} />
+    <img src={rachel} alt="" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis
       efficitur dolor, in porta erat. Etiam interdum consectetur facilisis. Sed
