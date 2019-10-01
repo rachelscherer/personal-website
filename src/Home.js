@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import rachel from "./assets/rachel.jpg";
+import rachel from "./assets/rachel.png";
 
 export const Home = () => (
   <div>

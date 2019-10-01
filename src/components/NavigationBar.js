@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
+import DrawerButton from "./SideDrawer/DrawerButton";
 
 class NavigationBar extends Component {
   constructor() {
@@ -32,6 +33,7 @@ class NavigationBar extends Component {
         <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
           <div className="nav_text">
             <hr className="top" />
+            <DrawerButton />
             <Router>
               <Link to="/">About</Link>
               <Link to="/">CV</Link>
@@ -44,7 +46,9 @@ class NavigationBar extends Component {
         <div className={this.state.scrolled ? "spacer" : "nospacer"}>
           &nbsp;
         </div>
-        <div className="title"><h3>Hi, I'm Rachel.</h3></div>
+        <div className="title">
+          <h3>Hi, I'm Rachel.</h3>
+        </div>
       </React.Fragment>
     );
   }
