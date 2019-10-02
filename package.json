@@ -2,7 +2,7 @@
   "name": "personalwebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "racheljs.com",
+  "homepage": "http://rachelscherer.github.io/personal-website",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
