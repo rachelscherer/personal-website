@@ -1,0 +1,36 @@
+.side-drawer {
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 2;
+  transform: translateX(-105%);
+  transition: transform 0.2s ease-out;
+}
+
+.side-drawer ul {
+  height: 100%;
+  margin-top: 80px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-drawer a {
+  text-decoration: none;
+  float: left;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+  color: orange;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}

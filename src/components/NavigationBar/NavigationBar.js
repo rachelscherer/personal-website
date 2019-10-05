@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
-import DrawerButton from "./SideDrawer/DrawerButton";
+import DrawerButton from "../SideDrawer/DrawerButton";
 
 class NavigationBar extends Component {
   constructor() {
@@ -33,12 +33,20 @@ class NavigationBar extends Component {
         <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
           <div className="nav_text">
             <hr className="top" />
-            <DrawerButton />
+            <DrawerButton click={this.props.drawerClickHandler} />
             <Router>
-              <Link to="/">About</Link>
-              <Link to="/">CV</Link>
-              <Link to="/">Projects</Link>
-              <Link to="/">Contact</Link>
+              <Link to="/" className="navLink">
+                About
+              </Link>
+              <Link to="/" className="navLink">
+                CV
+              </Link>
+              <Link to="/" className="navLink">
+                Projects
+              </Link>
+              <Link to="/" className="navLink">
+                Contact
+              </Link>
             </Router>
             <hr className="bottom" />
           </div>

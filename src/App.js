@@ -1,28 +1,50 @@
 import React, { Component } from "react";
-import { HashRouter, Route } from "react-router-dom";
-import { Home } from "./Home";
+import { BrowserRouter as Router } from "react-router-dom";
 import { About } from "./About";
 import { CV } from "./CV";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
 import { Layout } from "./components/Layout";
-import NavigationBar from "./components/NavigationBar";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
 
 class App extends Component {
+  state = {
+    sideDrawerOpen: false
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
+
   render() {
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
+
     return (
-      <HashRouter basename="/">
-        <React.Fragment>
-          <NavigationBar />
+      <div>
+        <Router>
+          <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backdrop}
           <Layout>
-            <Home />
             <About />
             <CV />
             <Projects />
             <Contact />
           </Layout>
-        </React.Fragment>
-      </HashRouter>
+        </Router>
+      </div>
     );
   }
 }
