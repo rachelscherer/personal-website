@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./SideDrawer.css";
 
 const sideDrawer = props => {
@@ -11,20 +11,47 @@ const sideDrawer = props => {
   return (
     <router>
       <nav className={drawerClasses}>
-        <ul>
-          <li>
-            <Link to="/">CV</Link>
-          </li>
-          <li>
-            <Link to="/">About</Link>
-          </li>
-          <li>
-            <Link to="/">Projects</Link>
-          </li>
-          <li>
-            <Link to="/">Contact</Link>
-          </li>
-        </ul>
+        <div className="sideSpacer" />
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-140}
+          duration={1000}
+        >
+          <div className="sideNavLink">About</div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="cv"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          <div className="sideNavLink">CV</div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          <div className="sideNavLink">Projects</div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          <div className="sideNavLink">Contact</div>
+        </Link>
       </nav>
     </router>
   );

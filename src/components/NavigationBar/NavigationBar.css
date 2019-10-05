@@ -1,11 +1,30 @@
+.link {
+  text-decoration: none;
+}
+
+.active .navLink {
+  color: #ff4500;
+}
+
 div {
   text-align: center;
 }
 
-a.navLink {
+.navLink {
   padding: 0;
   display: none;
   visibility: hidden;
+  transition: color 0.02s;
+  color: #265c83;
+}
+
+.navLink:hover {
+  color: #ff7f50;
+  cursor: pointer;
+}
+.navLink:active {
+  transition: color 0.02s;
+  color: #ff4500;
 }
 
 hr.top {
@@ -56,10 +75,18 @@ hr.bottom {
 }
 
 @media only screen and (min-width: 768px) {
-  a.navLink {
+  .spacer {
+    height: 252px;
+  }
+  .nospacer {
+    height: 0px;
+  }
+  .navLink {
     padding: 0 42px 0 42px;
     visibility: visible;
     display: inline;
+    transition: color 0.25s;
+    color: #265c83;
   }
 
   .title {
@@ -91,12 +118,5 @@ hr.bottom {
     position: fixed;
     background-color: #d8e8f8;
     margin-top: -198px;
-  }
-
-  .spacer {
-    height: 252px;
-  }
-  .nospacer {
-    height: 0px;
   }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./NavigationBar.css";
 import DrawerButton from "../SideDrawer/DrawerButton";
 
@@ -29,25 +28,51 @@ class NavigationBar extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div>
         <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
           <div className="nav_text">
             <hr className="top" />
             <DrawerButton click={this.props.drawerClickHandler} />
-            <Router>
-              <Link to="/" className="navLink">
-                About
-              </Link>
-              <Link to="/" className="navLink">
-                CV
-              </Link>
-              <Link to="/" className="navLink">
-                Projects
-              </Link>
-              <Link to="/" className="navLink">
-                Contact
-              </Link>
-            </Router>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-55}
+              duration={1000}
+            >
+              <div className="navLink">About</div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="cv"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              <div className="navLink">CV</div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              <div className="navLink">Projects</div>
+            </Link>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              <div className="navLink">Contact</div>
+            </Link>
             <hr className="bottom" />
           </div>
         </div>
@@ -57,7 +82,7 @@ class NavigationBar extends Component {
         <div className="title">
           <h3>Hi, I'm Rachel.</h3>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

@@ -11,26 +11,29 @@
   transition: transform 0.2s ease-out;
 }
 
-.side-drawer ul {
-  height: 100%;
-  margin-top: 80px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
+.sideSpacer {
+  height: 70px;
 }
 
-.side-drawer a {
+.sideNavLink {
   text-decoration: none;
-  float: left;
-  padding-top: 10px;
-  font-size: 1.2rem;
+  padding-top: 20px;
+  font-size: 1.4rem;
+  transition: color 0.02s;
+  color: #265c83;
 }
 
-.side-drawer a:hover,
-.side-drawer a:active {
-  color: orange;
+.sideNavLink:hover {
+  color: #ff7f50;
+  cursor: pointer;
+}
+
+.sideNavLink:active {
+  transition: color 0.02s;
+  color: #ff4500;
 }
 
 .side-drawer.open {
   transform: translateX(0);
+  transition: transform 0.2s ease-out;
 }
