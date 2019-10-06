@@ -4,7 +4,6 @@ import { About } from "./pages/About";
 import { CV } from "./pages/CV";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
-import { Layout } from "./components/Layout";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
@@ -36,12 +35,10 @@ class App extends Component {
           <NavigationBar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-          <Layout>
-            <About />
-            <CV />
-            <Projects />
-            <Contact />
-          </Layout>
+          <About />
+          <CV />
+          <Projects />
+          <Contact />
         </Router>
       </div>
     );
