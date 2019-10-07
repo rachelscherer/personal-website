@@ -5,6 +5,7 @@ import "./CV.css";
 export const CV = () => (
   <div id="cv" className="cvbg">
     <Container>
+      <br />
       <h2>CV</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -89,5 +90,6 @@ export const CV = () => (
         eu rhoncus justo.
       </p>
     </Container>
+    <br />
   </div>
 );

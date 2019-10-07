@@ -27,18 +27,12 @@ div {
   color: #ff4500;
 }
 
-hr.top {
-  border: 1px solid #dcedff;
-  width: 100%;
-}
-
 hr.bottom {
-  border: 1px solid #d8e8f8;
-  width: 100%;
+  border-color: #374353;
 }
 
 .nav {
-  background-color: #d8e8f8;
+  background-color: #374353;
   position: fixed;
   margin-top: -18px;
   width: 100%;
@@ -47,7 +41,7 @@ hr.bottom {
 
 .scrolled {
   position: fixed;
-  background-color: #d8e8f8;
+  background-color: #374353;
   margin-top: -18px;
   width: 100%;
   justify-content: center;
@@ -59,7 +53,7 @@ hr.bottom {
   left: 50%;
   margin-left: -104px;
   text-align: center;
-  z-index: -1;
+  color: #374353
 }
 
 .spacer {
@@ -86,7 +80,7 @@ hr.bottom {
     visibility: visible;
     display: inline;
     transition: color 0.25s;
-    color: #265c83;
+    color: #374353;
   }
 
   .title {
@@ -98,25 +92,48 @@ hr.bottom {
   }
 
   hr.top {
-    width: 500px;
+    border: 1px solid #DDDDDD;
+    width: 45%;
+    min-width: 500px;
   }
 
   hr.bottom {
-    width: 740px;
+    border: 1px solid #DDDDDD;
+    width: 56%;
+    min-width: 740px;
   }
 
   .nav {
     position: relative;
     margin-top: 0px;
     padding-top: 180px;
-    background-color: white;
+    background-color: #EEEEEE;
     transition: background-color 0.35s ease;
   }
 
   .scrolled {
     transition: background-color 0.35s ease;
     position: fixed;
-    background-color: #d8e8f8;
+    background-color: #374353;
     margin-top: -198px;
+  }
+
+  .scrolled .navLink{
+    color: #EEEEEE;
+  }
+  .scrolled .active .navLink {
+    color: #ff4500;
+  }
+  .scrolled .navLink:hover {
+    color: #ff7f50;
+    cursor: pointer;
+  }
+  .scrolled .navLink:active {
+    transition: color 0.02s;
+    color: #ff4500;
+  }
+
+  .scrolled hr.bottom{
+    border-color: #374353;
   }
 }

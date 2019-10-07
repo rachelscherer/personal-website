@@ -91,6 +91,7 @@ export const About = () => (
         habitasse platea dictumst. Praesent commodo blandit nulla in finibus. In
         eu rhoncus justo.
       </p>
+      <br />
     </Container>
   </div>
 );

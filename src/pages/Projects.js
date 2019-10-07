@@ -5,6 +5,7 @@ import "./Projects.css";
 export const Projects = () => (
   <div id="projects" className="projectsbg">
     <Container>
+      <br />
       <h2>Projects</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -89,5 +90,6 @@ export const Projects = () => (
         eu rhoncus justo.
       </p>
     </Container>
+    <br />
   </div>
 );
