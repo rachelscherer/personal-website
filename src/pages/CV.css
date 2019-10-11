@@ -1,4 +1,13 @@
 .cvbg {
-  background-color: #F1E4E8;
-  padding-bottom:1px;
+  background-color: #f1e4e8;
+  padding-bottom: 1px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.cvbod {
+  text-align: left;
 }

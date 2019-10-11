@@ -8,7 +8,7 @@ export const About = () => (
     <Container>
       <br />
       <br />
-      <img src={rachel} alt="" />
+      <img src={rachel} alt="" className="aboutimg" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
         mattis efficitur dolor, in porta erat. Etiam interdum consectetur

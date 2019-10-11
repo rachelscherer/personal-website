@@ -1,4 +1,58 @@
 .projectsbg {
-  background-color: #EEEEEE;
-  padding-bottom:1px;
+  background-color: #eeeeee;
+  padding-bottom: 1px;
+}
+
+.projectcenter {
+  text-align: center;
+}
+
+.item1 {
+  display: inline-block;
+  height: 340px;
+  width: 70%;
+  max-width: 340px;
+  margin: 30px;
+  background-image: url(./../assets/react.png);
+  border-radius: 15px;
+}
+.item2 {
+  display: inline-block;
+  height: 340px;
+  width: 70%;
+  max-width: 340px;
+  margin: 30px;
+  background-image: url(./../assets/chess.jpg);
+  border-radius: 15px;
+}
+.item3 {
+  display: inline-block;
+  height: 340px;
+  width: 70%;
+  max-width: 340px;
+  margin: 30px;
+  background-image: url(./../assets/uno.png);
+  border-radius: 15px;
+}
+.item4 {
+  display: inline-block;
+  height: 340px;
+  width: 70%;
+  max-width: 340px;
+  margin: 30px;
+  background-image: url(./../assets/t9.png);
+  border-radius: 15px;
+}
+.shade {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: inherit;
+}
+
+.itemheader {
+  font-weight: bold;
+  font-size: 1.9rem;
 }

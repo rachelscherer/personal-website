@@ -1,12 +1,12 @@
-img {
+.aboutimg {
   border-radius: 50%;
   float: top;
   margin: 25px;
 }
 
 .aboutbg {
-  background-color: #EEEEEE;
-  padding-bottom:1px;
+  background-color: #eeeeee;
+  padding-bottom: 1px;
 }
 
 @media only screen and (min-width: 768px) {

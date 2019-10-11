@@ -48,7 +48,7 @@ class NavigationBar extends Component {
               to="cv"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-55}
               duration={1000}
             >
               <div className="navLink">CV</div>
@@ -58,7 +58,7 @@ class NavigationBar extends Component {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-55}
               duration={1000}
             >
               <div className="navLink">Projects</div>

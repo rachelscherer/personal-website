@@ -53,7 +53,7 @@ hr.bottom {
   left: 50%;
   margin-left: -104px;
   text-align: center;
-  color: #374353
+  color: #374353;
 }
 
 .spacer {
@@ -89,16 +89,17 @@ hr.bottom {
     left: 50%;
     margin-left: -104px;
     z-index: 0;
+    font-weight: bold;
   }
 
   hr.top {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #dddddd;
     width: 45%;
     min-width: 500px;
   }
 
   hr.bottom {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #dddddd;
     width: 56%;
     min-width: 740px;
   }
@@ -107,7 +108,7 @@ hr.bottom {
     position: relative;
     margin-top: 0px;
     padding-top: 180px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     transition: background-color 0.35s ease;
   }
 
@@ -118,8 +119,8 @@ hr.bottom {
     margin-top: -198px;
   }
 
-  .scrolled .navLink{
-    color: #EEEEEE;
+  .scrolled .navLink {
+    color: #eeeeee;
   }
   .scrolled .active .navLink {
     color: #ff4500;
@@ -133,7 +134,7 @@ hr.bottom {
     color: #ff4500;
   }
 
-  .scrolled hr.bottom{
+  .scrolled hr.bottom {
     border-color: #374353;
   }
 }
