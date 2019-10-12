@@ -43,13 +43,19 @@
   background-image: url(./../assets/t9.png);
   border-radius: 15px;
 }
+
 .shade {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   height: 100%;
   width: 100%;
   padding: 20px;
   border-radius: inherit;
+}
+
+.shade:hover{
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: background-color 0.15s ease;
 }
 
 .itemheader {

@@ -6,21 +6,17 @@ export const Contact = () => (
   <div id="contact" className="contactbg">
     <Container>
       <br />
-      <h2>Contact</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        mattis efficitur dolor, in porta erat. Etiam interdum consectetur
-        facilisis. Sed ultrices orci velit, nec iaculis erat aliquam quis. Nunc
-        consequat bibendum ligula ac consequat. Sed eget ligula ultricies,
-        auctor libero rutrum, venenatis purus. Quisque ultricies mi nunc, ac
-        volutpat est viverra non. Etiam vulputate magna accumsan euismod
-        eleifend. In tortor ex, dignissim quis ante quis, sagittis elementum
-        lectus. Nam congue facilisis justo, non egestas dolor lacinia ac. Mauris
-        elementum massa aliquet nisi varius faucibus. Suspendisse et tincidunt
-        sem. Mauris euismod sagittis tincidunt. Nunc vehicula suscipit diam non
-        pulvinar.
-      </p>
+      <h1>Contact</h1>
+      <hr class="contacthr"/>
+      <div className="icon"><a href="https://www.linkedin.com/in/rachelscherer/" target="_blank"><i class='fab fa-linkedin'></i> https://www.linkedin.com/in/rachelscherer/</a></div>
       <br />
+        <div className="icon"><a href="mailto:rjscherer@cpp.edu"><i class="material-icons">email</i> rjscherer@cpp.edu</a></div>
+      <br/>
+      <hr class="contacthr"/>
     </Container>
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 );

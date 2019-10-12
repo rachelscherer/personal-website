@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./CV.css";
+import cvfile from "./../assets/CV.pdf"
 
 export const CV = () => (
   <div id="cv" className="cvbg">
@@ -9,7 +10,7 @@ export const CV = () => (
       <h1>CV</h1>
       <h5>
         You can download my full CV{" "}
-        <a href="/" target="_blank">
+        <a href={cvfile}>
           here.
         </a>
       </h5>
@@ -47,7 +48,7 @@ export const CV = () => (
       <hr />
       <br />
       <Row>
-        <Col sm="3">
+        <Col sm="3">  
           <h5>Technical Skills</h5>
           <br />
           <br />

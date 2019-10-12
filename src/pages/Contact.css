@@ -3,3 +3,27 @@
   padding-bottom:1px;
   color: #EEEEEE;
 }
+
+.contacthr{
+  border-color: #888888;
+  margin-bottom: 25px;
+}
+
+.icon a{
+  color: #EEEEEE;
+}
+
+.icon i{
+  font-size: 30px;
+  color: #EEEEEE;
+}
+
+.icon a:hover{
+  color: #ff7f50;
+  transition: color 0.02s;
+}
+
+.icon a:active{
+  transition: color 0.02s;
+  color: #ff4500;
+}

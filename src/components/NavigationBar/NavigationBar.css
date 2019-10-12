@@ -37,6 +37,7 @@ hr.bottom {
   margin-top: -18px;
   width: 100%;
   justify-content: center;
+  z-index:1;
 }
 
 .scrolled {
@@ -45,6 +46,7 @@ hr.bottom {
   margin-top: -18px;
   width: 100%;
   justify-content: center;
+  z-index:1;
 }
 
 .title {
@@ -88,7 +90,7 @@ hr.bottom {
     top: 125px;
     left: 50%;
     margin-left: -104px;
-    z-index: 0;
+    z-index: 1;
     font-weight: bold;
   }
 
