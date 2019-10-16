@@ -4,14 +4,12 @@
   position: absolute;
   justify-content: space-evenly;
   left: 30px;
-  margin-top: -7px;
+  top: 26px;
   background: transparent;
   border: 2px solid #DDDDDD;
   border-radius: 6px;
   height: 40px;
   width: 50px;
-  visibility: visible;
-  box-sizing: border-box;
 }
 
 .line {
