@@ -1,7 +1,7 @@
 .contactbg {
   background-color: #374353;
   padding-bottom:1px;
-  color: #EEEEEE;
+  color: #f9f9f9;
 }
 
 .contacthr{
@@ -10,12 +10,12 @@
 }
 
 .icon a{
-  color: #EEEEEE;
+  color: #f9f9f9;
 }
 
 .icon i{
   font-size: 30px;
-  color: #EEEEEE;
+  color: #f9f9f9;
 }
 
 .icon a:hover{

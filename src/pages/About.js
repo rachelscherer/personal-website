@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import { Link } from "react-scroll";
 import "./About.css";
 import rachel from "./../assets/rachel.png";
 
@@ -7,92 +8,30 @@ export const About = () => (
   <div id="about" className="aboutbg">
     <Container>
       <br />
-      <br />
       <img src={rachel} alt="" className="aboutimg" />
-      <p>After graduating with a B.A. in Music from the Florida State University in 2017, I decided to learn to code. Now, I am a web developer, computer science student, and I.T. worker based in Riverside, CA. </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        mattis efficitur dolor, in porta erat. Etiam interdum consectetur
-        facilisis. Sed ultrices orci velit, nec iaculis erat aliquam quis. Nunc
-        consequat bibendum ligula ac consequat. Sed eget ligula ultricies,
-        auctor libero rutrum, venenatis purus. Quisque ultricies mi nunc, ac
-        volutpat est viverra non. Etiam vulputate magna accumsan euismod
-        eleifend. In tortor ex, dignissim quis ante quis, sagittis elementum
-        lectus. Nam congue facilisis justo, non egestas dolor lacinia ac. Mauris
-        elementum massa aliquet nisi varius faucibus. Suspendisse et tincidunt
-        sem. Mauris euismod sagittis tincidunt. Nunc vehicula suscipit diam non
-        pulvinar.
-      </p>
-      <p>
-        In posuere fermentum dignissim. In efficitur justo vel eros laoreet,
-        quis posuere mauris venenatis. Vivamus porta magna ut dui tristique
-        malesuada. Nullam aliquet, risus sit amet congue congue, enim mauris
-        consectetur lorem, ac sodales nulla nisi et purus. Praesent eu neque
-        porta, interdum felis quis, tempor sem. Mauris eget ante quis massa
-        vulputate cursus sit amet sit amet arcu. Nullam vel dolor sapien. Aenean
-        lobortis nulla nisl, sed ullamcorper tortor vehicula quis. Cras lectus
-        tortor, euismod sed sem eu, porta malesuada sapien. Nunc consequat
-        ligula turpis, quis bibendum nisi finibus at. Nullam semper erat lectus,
-        at sagittis neque rhoncus eget. Aenean eu suscipit urna. In hac
-        habitasse platea dictumst. Praesent commodo blandit nulla in finibus. In
-        eu rhoncus justo.
-      </p>
-      <p>
-        Donec eu nunc quis diam varius dictum lobortis vitae tortor. Duis
-        ullamcorper non nunc feugiat egestas. Integer blandit, risus mattis
-        pulvinar hendrerit, urna ligula egestas odio, quis congue nibh velit
-        posuere leo. Vivamus volutpat blandit finibus. Quisque ex nulla, posuere
-        at eros eget, dignissim luctus ipsum. Nunc feugiat consectetur turpis.
-        Aliquam ultricies lectus in nisl aliquet, ac mattis sem maximus. Donec
-        scelerisque felis non lobortis varius. Phasellus id bibendum enim. Donec
-        varius at nunc vitae volutpat. Cras vel venenatis lectus. Ut vestibulum
-        ac magna id mattis.
-      </p>
-      <p>
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia Curae; Pellentesque nec metus sit amet lectus viverra convallis.
-        Curabitur sagittis pellentesque justo in venenatis. Praesent hendrerit
-        diam nec orci accumsan, eget rhoncus felis venenatis. Nulla tempus
-        eleifend tellus, eu maximus mauris aliquam ac. Nulla quis massa
-        placerat, commodo est non, ullamcorper nisi. Aenean at varius neque.
-        Pellentesque sed placerat enim. Mauris a lectus vel neque egestas
-        sodales ac nec nisi. Integer tempus ligula dolor, id placerat elit
-        dictum imperdiet. Duis aliquet fringilla augue, commodo interdum justo
-        vulputate vel. Fusce semper mi ullamcorper, semper metus eget, tempor
-        arcu. Duis finibus, arcu vitae congue laoreet, leo ligula dictum risus,
-        a consequat nibh nisl et purus. Nam odio urna, fringilla eget diam
-        facilisis, tristique faucibus eros. Curabitur in nisi aliquet arcu
-        euismod molestie.
-      </p>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-        luctus, metus
-      </p>
-      <p>
-        In posuere fermentum dignissim. In efficitur justo vel eros laoreet,
-        quis posuere mauris venenatis. Vivamus porta magna ut dui tristique
-        malesuada. Nullam aliquet, risus sit amet congue congue, enim mauris
-        consectetur lorem, ac sodales nulla nisi et purus. Praesent eu neque
-        porta, interdum felis quis, tempor sem. Mauris eget ante quis massa
-        vulputate cursus sit amet sit amet arcu. Nullam vel dolor sapien. Aenean
-        lobortis nulla nisl, sed ullamcorper tortor vehicula quis. Cras lectus
-        tortor, euismod sed sem eu, porta malesuada sapien. Nunc consequat
-        ligula turpis, quis bibendum nisi finibus at. Nullam semper erat lectus,
-        at sagittis neque rhoncus eget. Aenean eu suscipit urna. In hac
-        habitasse platea dictumst. Praesent commodo blandit nulla in finibus. In
-        eu rhoncus justo.
-      </p>
+      <p>After graduating with a B.A. in Music from the Florida State University in 2017, I decided to learn to code. Now, I am a web developer, computer science student, and I.T. professional based in Riverside, California. </p>
+      <p>I began my journey with programming at the age of 10 when I used to create and program Flash games using Macromedia Flash MX 2004 and ActionScript 2.0. I was always drawn to the creativity in planning, designing, drawing, and animating these games as well as the satisfaction in programming them to bring it all together.</p>
+      <p>My creative itch naturally extended into a passion for music, which led me to pursue a B.A. in Music at FSU. I developed many valuable skills there, but I really missed programming. After taking a few CS classes as electives, I made the decision to pursue programming after graduation. I believe that the right combination of creativity and analytical reasoning skills serve as a catalyst for innovation.</p>
+      <p>My specialty right now is writing elegant front-end code using HTML, CSS, JavaScript, and the React Library, <Link
+              activeClass="active"
+              to="cv"
+              spy={true}
+              smooth={true}
+              offset={-55}
+              duration={1000}
+            >
+              <div className="aboutNavLink">but I also have experience in many other areas in CS.</div>
+            </Link> As a student, I am always eager to learn more.</p>
+      <p>While I'm not in class, at work, or <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-55}
+              duration={1000}
+            >
+              <div className="aboutNavLink">working on my personal projects</div>
+            </Link>, you can probably find me skiing at Mammoth Mountain, hiking in one of the many fantastic trails in SoCal, or making music with friends.</p>
       <br />
     </Container>
   </div>

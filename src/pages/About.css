@@ -2,11 +2,28 @@
   border-radius: 50%;
   float: top;
   margin: 25px;
+  width: 247px;
 }
 
 .aboutbg {
-  background-color: #eeeeee;
+  background-color: #f9f9f9;
   padding-bottom: 1px;
+}
+
+.aboutNavLink {
+  padding: 0;
+  display: inline;
+  transition: color 0.12s;
+  color: #265c83;
+}
+
+.aboutNavLink:hover {
+  color: #ff7f50;
+  cursor: pointer;
+}
+.aboutNavLink:active {
+  transition: color 0.12s;
+  color: #ff4500;
 }
 
 @media only screen and (min-width: 768px) {
