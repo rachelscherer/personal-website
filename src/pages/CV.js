@@ -78,7 +78,7 @@ export const CV = () => (
           <b>PC Support Specialist, Cal Poly Pomona Foundation</b>
           <br />
           Pomona, CA, May 2019 - present
-          <br />
+          <br />npm
           <ul>
             <li>
               Provide support via telephone, face to face and remotely with end-users utilizing customer service techniques
