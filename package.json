@@ -2,7 +2,7 @@
   "name": "personalwebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.racheljs.com/",
+  "homepage": "https://www.racheljs.com/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
