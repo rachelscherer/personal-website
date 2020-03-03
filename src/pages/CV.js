@@ -26,9 +26,9 @@ export const CV = () => (
         <Col className="cvbod">
           <b>California State Polytechnic University, Pomona</b>
           <br />
-          Supplemental Education in Computer Science, 2019 - present
+          M.S. in Computer Science (in progress), 2019 - present
           <br />
-          GPA: TBD
+          GPA: 4.00
           <br />
           <br />
           <b>Riverside City College</b> <br />
@@ -81,10 +81,10 @@ export const CV = () => (
           <br />
           <ul>
             <li>
-              Provide support via telephone, face to face and remote desktop
-              communication with end-users utilizing customer service techniques
+              Provide support via telephone, face to face and remotely with end-users utilizing customer service techniques
               and strong communication skills.
             </li>
+            <li>Create, implement, and maintain PowerShell scripts to automate tasks and log data.</li>
             <li>
               Provide workstation, printer, point-of-sale and peripheral
               support.
