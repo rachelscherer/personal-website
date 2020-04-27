@@ -7,7 +7,7 @@ class NavigationBar extends Component {
   constructor() {
     super();
     this.state = {
-      scrolled: false
+      scrolled: false,
     };
   }
 
@@ -51,7 +51,7 @@ class NavigationBar extends Component {
               offset={-55}
               duration={1000}
             >
-              <div className="navLink">CV</div>
+              <div className="navLink">Resume</div>
             </Link>
             <Link
               activeClass="active"

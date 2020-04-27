@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 import "./SideDrawer.css";
-import { tsPropertySignature } from "@babel/types";
 
-const sideDrawer = props => {
+const sideDrawer = (props) => {
   let drawerClasses = "side-drawer";
   if (props.show) {
     drawerClasses = "side-drawer open";

@@ -7,6 +7,15 @@
   text-align: center;
 }
 
+.item5 {
+  display: inline-block;
+  height: 340px;
+  width: 70%;
+  max-width: 340px;
+  margin: 30px;
+  background-image: url(./../assets/mealtime.png);
+  border-radius: 15px;
+}
 .item1 {
   display: inline-block;
   height: 340px;
@@ -53,7 +62,7 @@
   border-radius: inherit;
 }
 
-.shade:hover{
+.shade:hover {
   background-color: rgba(0, 0, 0, 0.85);
   transition: background-color 0.15s ease;
 }

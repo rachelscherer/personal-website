@@ -1,18 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./CV.css";
-import cvfile from "./../assets/CV.pdf"
+import cvfile from "./../assets/Resume.pdf";
 
 export const CV = () => (
   <div id="cv" className="cvbg">
     <Container>
       <br />
-      <h1>CV</h1>
+      <h1>Resume</h1>
       <h5>
-        You can download my full CV{" "}
-        <a href={cvfile}>
-          here.
-        </a>
+        You can download my Resume <a href={cvfile}>here.</a>
       </h5>
       <br />
       <hr />
@@ -24,9 +21,16 @@ export const CV = () => (
           <br />
         </Col>
         <Col className="cvbod">
+          <b>Georgia Institute of Technology</b>
+          <br />
+          M.S. in Computer Science (in progress), 2020 - present
+          <br />
+          GPA: TBD
+          <br />
+          <br />
           <b>California State Polytechnic University, Pomona</b>
           <br />
-          M.S. in Computer Science (in progress), 2019 - present
+          Supplemental Education in Computer Science, 2019 - 2020
           <br />
           GPA: 4.00
           <br />
@@ -48,21 +52,26 @@ export const CV = () => (
       <hr />
       <br />
       <Row>
-        <Col sm="3">  
+        <Col sm="3">
           <h5>Technical Skills</h5>
           <br />
           <br />
         </Col>
         <Col className="cvbod">
-          <b>Most Experienced</b>
+          <b>MERN stack</b>
           <br />
-          C++, JavaScript, HTML/CSS, React, Windows 7, 8.1, 10, Linux, Bash,
-          Active Directory, Basic Networking and Servers, LaTeX
+          MongoDB, Express.js, React.js, Node.js
           <br />
           <br />
-          <b>Some Familiarity</b>
+          <b>Other technologies</b>
           <br />
-          PHP, MySQL, VBA, JQuery, PowerShell
+          C++, HTML/CSS, JavaScript ES6+, VBA, Git, AWS, some PHP and MySQL
+          <br />
+          <br />
+          <b>I.T.</b>
+          <br />
+          Windows 7, 8.1, 10, Linux, Bash, Vim, PowerShell, Active Directory,
+          Basic Networking and Servers, WSUS, MDT/WDS, Point of Sale systems
         </Col>
       </Row>
       <br />
@@ -78,13 +87,17 @@ export const CV = () => (
           <b>PC Support Specialist, Cal Poly Pomona Foundation</b>
           <br />
           Pomona, CA, May 2019 - present
-          <br />npm
+          <br />
           <ul>
             <li>
-              Provide support via telephone, face to face and remotely with end-users utilizing customer service techniques
-              and strong communication skills.
+              Provide support via telephone, face to face and remotely with
+              end-users utilizing customer service techniques and strong
+              communication skills.
             </li>
-            <li>Create, implement, and maintain PowerShell scripts to automate tasks and log data.</li>
+            <li>
+              Create, implement, and maintain PowerShell scripts to automate
+              tasks and log data.
+            </li>
             <li>
               Provide workstation, printer, point-of-sale and peripheral
               support.
