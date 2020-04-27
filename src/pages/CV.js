@@ -9,7 +9,7 @@ export const CV = () => (
       <br />
       <h1>Resume</h1>
       <h5>
-        You can download my Resume <a href={cvfile}>here.</a>
+        You can download my resume <a href={cvfile}>here.</a>
       </h5>
       <br />
       <hr />
